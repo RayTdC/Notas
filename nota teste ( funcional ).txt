@@ -1,0 +1,149 @@
+Capítulo 3
+Exercício 7
+
+Objetivo: Apresentar o novo peso -Emagrecendo e Engordando
+Entrada de Dados (via usuário): peso
+Processamento (cálculo): engordando = peso *1.15   ou engordando= peso + peso * 15 /100
+                                          emagrecendo = peso * 0.8 ou emagrecendo = peso - (peso * 20 /100)
+Saída de Dados (exibir na tela): engordando, emagrecendo
+
+Resolução
+programa {
+  funcao inicio() {
+    // declaração de variáveis
+    real peso, engordando, emagrecendo
+    // entrada de dados
+    escreva("Peso..:")
+    leia(peso)
+
+
+    // processamento
+    engordando = peso * 1.15 // engordando
+    emagrecendo = peso * 0.8  // emagrecendo
+
+    // saída de dados
+    escreva("Novo Peso Engordando..: " , engordando)
+    escreva("\nNovo Peso Emagrecendo..: ", emagrecendo)
+
+  }
+}
+
+
+Exercício 17
+
+Objetivo: Apresentar o comprimento, volume e área de uma esfera
+Entrada: raio
+Processamento: c= 2 * 3.14159 *raio 
+                            a = 3.14159 * raio * raio
+                            v= 3/4 * 3.14159 * raio ^ 3
+Saída: c, a, v
+
+Resolução
+programa {
+  funcao inicio() {
+    // declaração de variáveis
+    real raio, c, a, v
+    // entrada de dados
+    escreva("Raio: ")
+    leia(raio)
+    // processamento
+    c= 2 * 3.14159 *raio 
+    a = 3.14159 * raio * raio
+    v= 3/4 * 3.14159 * raio ^ 3
+    // saída de dados
+    escreva("Comprimento da esfera: " , c)
+    escreva("\nÁrea da esfera: " , a)
+    escreva("\nVolume da esfera: " , v)
+
+  }
+}
+
+
+Exercício 21
+
+Objetivo: Calcular o salário a receber
+Entrada: nrHoras, salMin, nrHorasExtra
+Processamento:
+  	valHoraTrab = salMin / 8  // (a) calculo do valor de 1 hora trabalhada
+ 	valHoraExtra = salMin/4  // (b) calculo do valor de 1 hora extra
+     	salBruto = valHoraTrab * nrHoras  // (c)
+        salExtra = valHoraExtra * nrHoraExtra  //(d)
+        salReceber = salBruto + salExtra  // (e)
+
+/* 
+outra forma de calcular
+salReceber = nrHoras * (salMin/8) + nrHorasExtra * (salMin/4) 
+
+*/
+
+
+Saída: salReceber
+
+Resolução
+programa {
+  funcao inicio() {
+    // declaração de variáveis
+    inteiro nrHoras, nrHorasExtra
+    real salMin, valHoraExtra, valHoraTrab,salReceber,salBruto,salExtra
+    // entrada de dados
+   escreva("Valor do salário Mínimo:")
+   leia(salMin)
+   escreva("Quantidade de horas trabalhada:")
+   leia(nrHoras)
+   escreva("Quantidade de Horas Extras:")
+   leia(nrHorasExtra)
+    // processamento
+    valHoraTrab = salMin / 8  // (a) calculo do valor de 1 hora trabalhada
+ 	  valHoraExtra = salMin/4  // (b) calculo do valor de 1 hora extra
+   	salBruto = valHoraTrab * nrHoras  // (c)
+    salExtra = valHoraExtra * nrHorasExtra  //(d)
+    salReceber = salBruto + salExtra  // (e)
+    // saída de dados
+    escreva("Salario a Receber:", salReceber)
+
+  }
+}
+
+
+Capítulo 4
+Estrutura Condicional
+
+1- Se
+2- Escolha
+
+
+Se
+   -- "verificar",  "comparar"
+
+Os tipos:
+    - Se simples
+    - Se composto
+    - Se encadeado (ou alinhado)
+
+Problema: Faça um programa que leia um número e imprima-o se for par.
+
+Problema: Imprimir o nr par
+entrada de dados: nr
+processamento: verificar se nr é par
+saída de dados: imprimir o nr par
+
+Estrutura Condicional simples
+     -- onde a condição retorna Verdade ou Falso
+
+
+se <condição> então
+    < comandos verdade>
+fim se
+
+Estrutura Condicional Composta
+
+se < condição > então
+       <comando_verdade>
+  senao
+        <comando_falso>
+fim se
+
+
+
+
+
